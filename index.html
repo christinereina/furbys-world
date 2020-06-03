@@ -7,10 +7,48 @@
   <link href="css/styles.css" rel="stylesheet" type = "text/css">
   <script src="js/jquery-3.5.1.js"></script>
   <script src="js/scripts.js"></script>
-  <title>Document</title>
+  <title>Furby's World</title>
 </head>
   <body>
-    hi
+  <div class="container">
+    <h1 class="jumbotron">Welcome to our shop</h1>
+    <section class="panel panel-default">
+      <form id="form">
+        <h2>Choose your Furby</h2>
+          <select class="form-control" id="furby">
+            <option>Rainbow Furby Mint Condition era 1999</option>
+            <option>Orange Sherbert Furby</option>
+            <option>Hello Kitty Furby Special Edition</option>
+            <option>Basic Furby (Budget Saver)</option>
+          </select>
+      <label for="name">Enter Your Name</label>
+        <input id="name" class="form-control" type="text">
+        <h2>Enter Your Shipping Address</h2>
+        <label for="street">Street Name</label>
+        <input id="street" class="form-control" type="text">
+        <label for="city">City</label>
+        <input id="city" class="form-control" type="text">
+        <label for="state">State</label>
+        <input id="state" class="form-control" type="text">
+        <label for="zip">Zip Code</label>
+        <input id="zip" class="form-control" type="text">
+        <h2>Choose Your Shipping Speed</h2>
+        <select class="form-control" id="ship">
+          <option>Ground (5 - 12 days)</option>
+          <option>Expedited (2 - 3 days)</option>
+          <option>Overnight (shipped same day)</option>
+        </select>
+        <button type="submit" class="btn">Place Order</button>
+      </form>
+    </section>
+  </div>
 
+  <div class="receipt">
+    <h1>Thank you for your order!</h1>
+    <p class="furby"></p>
+    <p class="name"></p>
+    <p>Shipped To: <span id="street"></span> <span id="city">,</span> <span id="state"> </span> <span id="zip"> </span></p>
+    <p class="ship"></p>
+  </div>
   </body>
 <html>
